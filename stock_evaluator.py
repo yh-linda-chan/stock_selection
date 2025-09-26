@@ -33,7 +33,7 @@ class StockEvaluator():
         # 收盤不能大於MA %
         stock_df['Signal_3'] = np.where((stock_df['Close']-stock_df['index'])/stock_df['index'] < self.close_ma_percent, 1, 0)
 
-        # 成交量大於1000
+        # 成交量大於
         stock_df['Signal_4'] = np.where(stock_df['Volume'] >= self.min_volume, 1, 0)
 
         # buy signal
