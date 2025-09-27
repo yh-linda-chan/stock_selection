@@ -1,4 +1,5 @@
 __pycache__/
+Database_Stock/
 *.pyc
 *.pyo
-.csv
+*.csv
