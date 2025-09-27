@@ -19,8 +19,6 @@ class StockDataCrawler():
         return today + n*24*3600
 
     def get_stock_df(self, ticker):
-
-        ticker = str(ticker) + '.TW'
         
         print('## Info: Download Ticker ' + ticker + '!')
         period1_timestamp = self.period1_timestamp

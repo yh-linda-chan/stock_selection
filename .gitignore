@@ -3,3 +3,4 @@ Database_Stock/
 *.pyc
 *.pyo
 *.csv
+*.ipynb

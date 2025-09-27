@@ -15,8 +15,6 @@ class StockEvaluator():
 
     def procss(self, ticker, stock_df):
 
-        ticker = str(ticker) + '.TW'
-
         stock_df['MA5'] = stock_df['Close'].rolling(window=5, min_periods=1).mean()
         stock_df['MA10'] = stock_df['Close'].rolling(window=10, min_periods=1).mean()
         stock_df['MA20'] = stock_df['Close'].rolling(window=20, min_periods=1).mean()
